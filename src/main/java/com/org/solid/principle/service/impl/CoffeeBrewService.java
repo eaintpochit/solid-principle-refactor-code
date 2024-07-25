@@ -20,10 +20,11 @@ public class CoffeeBrewService implements ICoffeeBrewService {
     @Override
     public void brewCoffee(String typeOfCoffee) {
         //polymorphism
+        //liskov substitution principle
         CoffeeBrew coffeeBrew = coffeeBrewMap.get(typeOfCoffee);
         if(coffeeBrew!=null){
             //ocp
-           coffeeBrew.brew();
+           coffeeBrew.brewCoffee();
         }
     }
 

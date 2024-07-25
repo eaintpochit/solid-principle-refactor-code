@@ -2,14 +2,14 @@ package com.org.solid.principle.service.impl;
 
 
 import com.org.solid.principle.service.CoffeeBrew;
-import com.org.solid.principle.service.ILatteCoffeeMachineService;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service("latte")
-public class LatteeCoffeeMachineService extends CoffeeBrew {
+@Component("latte")
+public class LatteeCoffeeService extends CoffeeBrew {
 
     @Override
-    public void brew() {
+    public void brewCoffee() {
         System.out.println("latte brew");
     }
 }
